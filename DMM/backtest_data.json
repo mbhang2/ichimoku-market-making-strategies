@@ -1,0 +1,132 @@
+[
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "033322",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -0.4429108022055649
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "032529",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -0.18269197544183788
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "031821",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -0.49457600999708606
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "030226",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -1.444369041504414
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "011359",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -1.0647986474511741
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "010504",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -3.270665620873702
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "183124",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.9474200078066054
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "182506",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -3.046089270260515
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "180608",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -3.046089270260515
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "175230",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -3.304160391754884
+        },
+        "fill": {},
+        "orders": {}
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "012236",
+        "repeat_count": 0,
+        "instance_name": "MVWAPCrypto",
+        "start_date": "01-01-2022",
+        "end_date": "01-01-2022",
+        "pnl": {
+            "sharpe_ratio": 1.368344680601225
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "235428",
+        "repeat_count": 0,
+        "instance_name": "MVWAPCrypto",
+        "start_date": "01-01-2022",
+        "end_date": "01-01-2022",
+        "pnl": {
+            "sharpe_ratio": 1.3683459562697442
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "234847",
+        "repeat_count": 0,
+        "instance_name": "BasicMACrypto",
+        "start_date": "01-01-2022",
+        "end_date": "01-01-2022",
+        "pnl": {
+            "sharpe_ratio": 1.3683459562697442
+        },
+        "fill": {},
+        "orders": {}
+    }
+]

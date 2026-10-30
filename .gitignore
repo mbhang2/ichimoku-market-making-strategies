@@ -1,0 +1,24 @@
+# Ignore hidden files and directories
+.*
+!.gitignore
+.obsidian/
+
+
+# Exclude the .gitignore file itself
+!/.gitignore
+env
+Analytics/IEX/__pycache__
+Polygon_API/polygon_data/
+api_key_git_ignore
+IEX_DATA
+Analytics/Sample_Data
+Analytics/dashboards/back_res
+# Build outputs and data
+*.so
+*.o
+*.pyc
+__pycache__/
+*.log
+output.txt
+*_order.csv
+*_fill.csv

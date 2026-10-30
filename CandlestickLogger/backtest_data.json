@@ -1,0 +1,15 @@
+[
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "223036",
+        "repeat_count": 0,
+        "instance_name": "IchimokuMA",
+        "start_date": "09-12-2022",
+        "end_date": "09-12-2022",
+        "pnl": {
+            "sharpe_ratio": -1.8965634422705968
+        },
+        "fill": {},
+        "orders": {}
+    }
+]

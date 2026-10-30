@@ -1,0 +1,54 @@
+[
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "023516",
+        "repeat_count": 0,
+        "instance_name": "BasicMACrypto",
+        "start_date": "01-01-2022",
+        "end_date": "01-21-2022",
+        "pnl": {
+            "sharpe_ratio": 2.3873533706030168
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "023239",
+        "repeat_count": 0,
+        "instance_name": "BasicMACrypto",
+        "start_date": "01-01-2022",
+        "end_date": "01-01-2022",
+        "pnl": {
+            "sharpe_ratio": 1.3683636499834653
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "234219",
+        "repeat_count": 0,
+        "instance_name": "BasicMACrypto",
+        "start_date": "01-01-2022",
+        "end_date": "01-01-2022",
+        "pnl": {
+            "sharpe_ratio": 1.3683459562697442
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "234048",
+        "repeat_count": 0,
+        "instance_name": "BasicMACrypto",
+        "start_date": "01-01-2022",
+        "end_date": "01-01-2022",
+        "pnl": {
+            "sharpe_ratio": 1.3683459562697442
+        },
+        "fill": {},
+        "orders": {}
+    }
+]

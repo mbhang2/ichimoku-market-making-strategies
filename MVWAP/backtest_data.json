@@ -1,0 +1,158 @@
+[
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "014220",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-03-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -1.203233876251879
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "002443",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-03-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -1.2366043630115573
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "231722",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.36552303638327294
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "231327",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.36552303638327294
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "224850",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.36552303638327294
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "213255",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-04-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": -0.42554202595782287
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "212905",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-04-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": -0.5696982520124838
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "212429",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-04-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": -0.5700574046678535
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "232908",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-04-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": -0.2141788789611863
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-15",
+        "unique_id": "110316",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.3741856631579052
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-15",
+        "unique_id": "103510",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.8765996745462976
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-15",
+        "unique_id": "091723",
+        "repeat_count": 0,
+        "instance_name": "MVWAP",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.35494724203819
+        },
+        "fill": {},
+        "orders": {}
+    }
+]

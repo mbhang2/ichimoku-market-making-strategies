@@ -1,0 +1,54 @@
+[
+    {
+        "backtest_date": "2023-12-15",
+        "unique_id": "010033",
+        "repeat_count": 0,
+        "instance_name": "MAandATRzero",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -3.5066590234377846
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-15",
+        "unique_id": "005628",
+        "repeat_count": 0,
+        "instance_name": "MAandATRzero",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -2.7811538353625695
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-15",
+        "unique_id": "005251",
+        "repeat_count": 0,
+        "instance_name": "MAandATRzero",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -3.1167047929426297
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-15",
+        "unique_id": "003514",
+        "repeat_count": 0,
+        "instance_name": "MAandATRzero",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.2931968655505157
+        },
+        "fill": {},
+        "orders": {}
+    }
+]

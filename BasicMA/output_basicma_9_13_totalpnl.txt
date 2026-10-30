@@ -1,0 +1,228 @@
+Compiling Strategy for ashitabh...
+chmod +x ./provision_scripts/git_pull.sh
+./provision_scripts/git_pull.sh
+Working directory (git_pull.sh): /home/ashitabh/Documents/ss/sdk/RCM/StrategyStudio/examples/strategies/group_02_project
+HEAD is now at 83beea4 removed pnl prints sendorder
+We pulled the repo.
+chmod +x ./provision_scripts/config_user.sh
+./provision_scripts/config_user.sh
+Checking user...
+Current user: ashitabh
+Current directory: /home/ashitabh/Documents/ss/sdk/RCM/StrategyStudio/examples/strategies/group_02_project/BasicMA
+Copying build_strategy.sh, delete_instance.py, run_backtest.sh, results_analytics.py, git_pull.sh to current folder...
+Replacing in build_strategy.sh...
+Replacing in run_backtest.sh...
+Replacing in delete_instance.py...
+Replacing in results_analytics.py...
+chmod +x ./provision_scripts/*.sh
+chmod +x ./provision_scripts/*.py
+ls -l ./provision_scripts/
+total 44
+-rwxrwxr-x 1 ashitabh ashitabh  137 Dec 19 13:45 akshay.sh
+-rwxrwxr-x 1 ashitabh ashitabh  143 Dec 19 13:45 ashitabh.sh
+-rwxrwxr-x 1 ashitabh ashitabh  832 Dec 19 14:09 build_strategy.sh
+-rwxrwxr-x 1 ashitabh ashitabh 1654 Dec 19 13:45 config_user.sh
+-rwxrwxr-x 1 ashitabh ashitabh 1684 Dec 19 14:09 delete_instance.py
+-rwxrwxr-x 1 ashitabh ashitabh 1693 Dec 19 13:45 generate_data.sh
+-rwxrwxr-x 1 ashitabh ashitabh 1016 Dec 19 14:09 git_pull.sh
+-rwxrwxr-x 1 ashitabh ashitabh 8356 Dec 19 14:09 results_analytics.py
+-rwxrwxr-x 1 ashitabh ashitabh 2780 Dec 19 14:09 run_backtest.sh
+pypy3 ./provision_scripts/delete_instance.py "BasicMA" "BasicMA"
+Python script at: /home/ashitabh/Documents/ss/bt/db
+Deleting all instances of all strategies from the sqlite database.
+Displaying the contents of StrategyInstance & StrategyType tables: (should be empty if deleted successfully)
+[]
+[]
+mkdir -p /home/ashitabh/Documents/ss/bt/strategies_dlls
+rm -rf /home/ashitabh/Documents/ss/bt/strategies_dlls/*
+rm -rf *.o BasicMA.so
+g++ -c -fPIC -fpermissive -O3 -std=c++11 -DShortWindow=\"5\" -DMediumWindow=\"13\" -DLongWindow=\"26\" -DAggression=\"true\" -DAggressionMultiplier=0.3 -DSpreadTick=0.17 -DPrintDebugInfo=0 -DBasicMADebugMessages=0 -DIgnoreOddLots=0 -DEND_METHOD=\"Current\" -DINSTANCE_NAME=\"BasicMA\" -DSTRATEGY_NAME=\"BasicMA\" -DSTART_DATE=\"2023-01-09\" -DEND_DATE=\"2023-01-13\" -I/usr/include -I../../../../includes -I../includes BasicMA.cpp -o BasicMA.o
+g++ -shared -Wl,-soname,BasicMA.so.1 -o BasicMA.so BasicMA.o ../../../../libs/x64/libstrategystudio_analytics.a ../../../../libs/x64/libstrategystudio.a ../../../../libs/x64/libstrategystudio_transport.a ../../../../libs/x64/libstrategystudio_marketmodels.a ../../../../libs/x64/libstrategystudio_utilities.a ../../../../libs/x64/libstrategystudio_flashprotocol.a
+cp BasicMA.so /home/ashitabh/Documents/ss/bt/strategies_dlls/.
+./provision_scripts/build_strategy.sh "BasicMA" "BasicMA" "2023-01-09" "2023-01-13"
+BasicMA
+BasicMA
+2023-01-09
+2023-01-13
+Original Host directory: /home/ashitabh/Documents/ss/sdk/RCM/StrategyStudio/examples/strategies/group_02_project/BasicMA
+
+Quitting.
+Connection id 1 finished.
+Initializing Strategy Studio Backtesting Server...
+Initializing Strategy Server...
+PROCESSOR_LOG_LEVEL configured as DEBUG
+Strategy Studio Server v 3.4.0.0
+Protocol Version v21.0
+Recovery mode disabled.
+Loading corporate action adapter dll /home/ashitabh/Documents/ss/bt/./corporate_action_adapters/TextCorporateActionAdapter.so...
+Loading instrument information from reference database...
+Loading equity instruments...
+Finished loading 0 equity instruments from reference database.
+Loading futures instruments...
+Finished loading 0 futures instruments from reference database.
+Loading options instruments...
+Finished loading 0 option instruments from reference database.
+Loading spot currency pair instruments...
+Finished loading 0 spot currency pairs from reference database.
+Loading bond instruments...
+Finished loading 0 bond instruments from reference database.
+Finished loading instrument information from reference database.
+Starting Seq Num = 1
+Loading strategy dll /home/ashitabh/Documents/ss/bt/strategies_dlls/BasicMA.so...
+End date set to: 2023-Jan-13
+Basic Ichimoku constructor called
+Candlestick windows are set to: 
+short_window_size: 5
+mid_window_size: 13
+long_window_size: 26
+Found new strategy type info for strategy BasicMA
+Loaded strategy type BasicMA from strategy DLL.
+Loading backtest reader library /home/ashitabh/Documents/ss/bt/./backtester-readers/OneTickAdapter.so...
+Loading backtest reader library /home/ashitabh/Documents/ss/bt/./backtester-readers/NomuraTickReader.so...
+Loading backtest reader library /home/ashitabh/Documents/ss/bt/./backtester-readers/NanexAdapter.so...
+Loading backtest reader library /home/ashitabh/Documents/ss/bt/./backtester-readers/LMAXAdapter.so...
+Loading backtest reader library /home/ashitabh/Documents/ss/bt/./backtester-readers/TickDataDotComAdapter.so...
+Loading backtest reader library /home/ashitabh/Documents/ss/bt/./backtester-readers/TextTickReader.so...
+Loading backtest reader library /home/ashitabh/Documents/ss/bt/./backtester-readers/MorningstarTickAdapter.so...
+Loading backtest reader library /home/ashitabh/Documents/ss/bt/./backtester-readers/KDBAdapter.so...
+Application state changed to STATE_APP_INITIALIZED
+Strategy Server initialized...
+Starting Strategy Studio Backtesting Server...
+Starting Strategy Server...
+Application state changed to STATE_APP_STARTING
+Application state changed to STATE_MARKET_OPENING
+Application state changed to STATE_RUNNING
+Strategy Server started...
+Running Strategy Studio Backtesting Server...
+Command line disabled. Type CTRL-C to end.
+Acceptor thread started.
+Started server
+Pick SPY symbol pwd: /home/ashitabh/Documents/ss/bt/utilities
+Symbol: SPY
+Login received from connection id 0
+End date set to: 2023-Jan-13
+Basic Ichimoku constructor called
+Candlestick windows are set to: 
+short_window_size: 5
+mid_window_size: 13
+long_window_size: 26
+Strategy BasicMA added to processor 0.
+
+Quitting.
+Connection id 0 finished.
+Connection id 1 finished.
+Created instance
+chmod +x ./provision_scripts/run_backtest.sh
+Activating fin556_env for Ashitabh
+./provision_scripts/run_backtest.sh "BasicMA" "2023-01-09" "2023-01-13" "BasicMA"
+BasicMA
+2023-01-09
+2023-01-13
+BasicMA
+/home/ashitabh/Documents/ss/bt
+Sleeping for 2 seconds while waiting for strategy studio to boot
+backtester_config.txt
+backtester-readers
+backtesting-results
+bin
+CANDLESTICK_BasicIchimoku_2023-01-03_to_END_DATE.csv
+corporate_action_adapters
+data_adapters
+db
+license.txt
+logs
+orderid.txt
+pnl_snapshots
+preferred_feeds.csv
+pstore
+strategies_dlls
+strategy-conf
+strategy-daily
+StrategyServerBacktesting
+strategystudio.dat
+text_tick_data
+utilities
+Server already running from current location.
+/home/ashitabh/Documents/ss/bt/utilities
+cmd_config_example.txt
+cmd_config.txt
+command_line_log_20231213.txt
+command_line_log_20231214.txt
+command_line_log_20231215.txt
+command_line_log_20231216.txt
+command_line_log_20231217.txt
+command_line_log_20231218.txt
+command_line_log.txt
+StrategyCommandLine
+Login received from connection id 1
+Starting backtest experiment 1 running 1 strategy with start date 2023-Jan-09 and end date 2023-Jan-13
+DataSourceMgr::BuildDataSource: Received request to build data source BacktesterReader for processor id 1
+Called Event register
+Current Date: 2023-Jan-09
+Total PnL: 0
+Started backtest experiment 1 with start date 2023-Jan-09 and end date 2023-Jan-13
+
+Quitting.
+Connection id 1 finished.
+Connection id 1 finished.
+Last line found:,24527
+Sleeping for 10 seconds...
+
+
+Text Backtest experiment 1 completed in 3.70841 secsand processed 1231017 ticks for a throughput of 331953 ticks per second
+Called Event register
+Current Date: 2023-Jan-10
+Total PnL: 4307.91
+Starting day 2023-Jan-10 of backtest experiment 1
+
+
+Text Backtest experiment 1 completed in 3.8532 secsand processed 1271362 ticks for a throughput of 329950 ticks per second
+Called Event register
+Current Date: 2023-Jan-11
+Total PnL: 3241.01
+Starting day 2023-Jan-11 of backtest experiment 1
+run_backtest.sh completed
+Latest CRA file path:, /home/ashitabh/Documents/ss/bt/backtesting-results/BACK_BasicMA_2023-12-19_201001_start_01-09-2023_end_01-13-2023.cra
+/home/ashitabh/Documents/ss/bt/utilities
+cmd_config_example.txt
+cmd_config.txt
+command_line_log_20231213.txt
+command_line_log_20231214.txt
+command_line_log_20231215.txt
+command_line_log_20231216.txt
+command_line_log_20231217.txt
+command_line_log_20231218.txt
+command_line_log.txt
+StrategyCommandLine
+Login received from connection id 2
+
+export successful
+
+Quitting.
+Connection id 2 finished.
+Connection id 1 finished.
+
+
+Text Backtest experiment 1 completed in 3.64167 secsand processed 1216163 ticks for a throughput of 333958 ticks per second
+Called Event register
+Current Date: 2023-Jan-12
+Total PnL: -7200.08
+Starting day 2023-Jan-12 of backtest experiment 1
+unique_id: 201001
+No empty CSV files found.
+New results:
+{'backtest_date': '2023-12-19', 'unique_id': '201001', 'repeat_count': 0, 'instance_name': 'BasicMA', 'start_date': '01-09-2023', 'end_date': '01-13-2023', 'pnl': {'sharpe_ratio': 0.9298376952952301}, 'fill': {}, 'orders': {}}
+This instance has not been added to the JSON. Inserting now...
+
+
+Text Backtest experiment 1 completed in 4.77144 secsand
+
+ processed 1577535 ticks for a throughput of 330620 ticks per second
+Called Event register
+Current Date: 2023-Jan-13
+Total PnL: -8952.35
+Starting day 2023-Jan-13 of backtest experiment 1
+
+
+Text Backtest experiment 1 completed in 4.10616 secsand processed 1365266 ticks for a throughput of 332492 ticks per second
+Backtest experiment 1 finished.

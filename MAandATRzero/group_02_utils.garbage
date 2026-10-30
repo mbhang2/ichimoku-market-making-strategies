@@ -1,0 +1,194 @@
+#include "group_02_utils.hpp"
+
+Candlestick::Candlestick(double open_price) 
+    : best_ask_price(0.0), best_bid_price(0.0), volume(0), open_price(open_price), close_price(0.0) {
+}
+
+void Candlestick::add_quote(const Quote& quote) {
+    add_best_ask_price(quote.best_ask_price);
+    add_best_bid_price(quote.best_bid_price);
+    if (isaskupdated || isbidupdated)
+    {
+        add_volume(quote.volume);
+    }
+    // add_close_price(quote.close_price);
+}
+
+void Candlestick::add_best_ask_price(double price) {
+    if (price > best_ask_price)
+    {
+        best_ask_price = price;
+        isaskupdated = true;
+    }
+    else
+    {
+        isaskupdated = false;
+    }
+
+}
+
+void Candlestick::add_best_bid_price(double price) {
+    if (price < best_bid_price)
+    {
+        best_bid_price = price;
+        isbidupdated = true;
+    }
+    else
+    {
+        isbidupdated = false;
+    }
+}
+
+void Candlestick::add_volume(int vol) {
+    volume = vol;
+}
+
+void Candlestick::add_open_price(double price) {
+    open_price = price;
+}
+
+void Candlestick::add_close_price(double price) {
+    isclosed = true;
+    close_price = price;
+}
+
+void CandlestickQueue::manage_state_init(const Candlestick& candle)
+{
+    if (candleQueue.size() <= short_window_size)
+    {
+        if (highest_ask_price_short < candle.best_ask_price)
+        {
+            highest_ask_price_short = candle.best_ask_price;
+        }
+
+        if (lowest_bid_price_short > candle.best_bid_price)
+        {
+            lowest_bid_price_short = candle.best_bid_price;
+        }
+    }
+    else
+    {
+        if (candleQueue.size() <= mid_window_size)
+        {
+            if (highest_ask_price_mid < candle.best_ask_price)
+            {
+                highest_ask_price_mid = candle.best_ask_price;
+            }
+
+            if (lowest_bid_price_mid > candle.best_bid_price)
+            {
+                lowest_bid_price_mid = candle.best_bid_price;
+            }
+        }
+        else
+        {
+            if (highest_ask_price_long < candle.best_ask_price)
+            {
+                highest_ask_price_long = candle.best_ask_price;
+            }
+
+            if (lowest_bid_price_long > candle.best_bid_price)
+            {
+                lowest_bid_price_long = candle.best_bid_price;
+            }
+        }
+    }
+}
+
+void CandlestickQueue::manage_state(const Candlestick& candle)
+{
+    // Short window highest ask price and lowest bid price update
+    if (highest_ask_price_short < candle.best_ask_price)
+    {
+        highest_ask_price_short = candle.best_ask_price;
+    }
+    
+    if (lowest_bid_price_short > candle.best_bid_price)
+    {
+        lowest_bid_price_short = candle.best_bid_price;
+    }
+
+    // Mid window highest ask price and lowest bid price update
+    if (highest_ask_price_mid < candle.best_ask_price)
+    {
+        highest_ask_price_mid = candle.best_ask_price;
+    }
+
+    if (lowest_bid_price_mid > candle.best_bid_price)
+    {
+        lowest_bid_price_mid = candle.best_bid_price;
+    }
+
+    // Long window highest ask price and lowest bid price update
+    if (highest_ask_price_long < candle.best_ask_price)
+    {
+        highest_ask_price_long = candle.best_ask_price;
+    }
+
+    if (lowest_bid_price_long > candle.best_bid_price)
+    {
+        lowest_bid_price_long = candle.best_bid_price;
+    }
+}
+
+bool CandlestickQueue::addCandlestick(const Candlestick& candle)
+{
+    assert(candle.isclosed); 
+    if (!candleQueue.empty() && candle.close_price == candleQueue.back().close_price) {
+        return false; // Do not add if the close price is the same as the last candlestick
+    }
+
+    if (candle.close_price == CandlestickQueue::most_recent_close_price){
+        return false; // Do not add if the close price is the same as the last candlestick
+    }
+
+    if (candleQueue.size() == maxSize) {
+        candleQueue.pop_front();
+    }
+    #ifdef LOGGING
+    logFile << candle.volume << "," << candle.open_price << "," << candle.close_price << "," << candle.best_ask_price << "," << candle.best_bid_price << std::endl;  
+    #endif
+    candleQueue.push_back(candle);
+    if (candleQueue.size() < long_window_size)
+    {
+         manage_state_init(candle);
+    }
+    else
+    {
+        manage_state(candle);
+    }
+    return true;
+}
+
+double CandlestickQueue::getshort_avg_highest_ask_lowest_bid_price()
+{
+    double short_avg_highest_ask_lowest_bid_price = (highest_ask_price_short + lowest_bid_price_short)/2;
+    return short_avg_highest_ask_lowest_bid_price;
+}
+
+double CandlestickQueue::getmid_avg_highest_ask_lowest_bid_price()
+{
+    double mid_avg_highest_ask_lowest_bid_price = (highest_ask_price_mid + lowest_bid_price_mid)/2;
+    return mid_avg_highest_ask_lowest_bid_price;
+}
+
+double CandlestickQueue::getlong_avg_highest_ask_lowest_bid_price()
+{
+    double long_avg_highest_ask_lowest_bid_price = (highest_ask_price_long + lowest_bid_price_long)/2;
+    return long_avg_highest_ask_lowest_bid_price;
+}
+
+void CandlestickQueue::set_short_window_size(int short_window_size)
+{
+    this->short_window_size = short_window_size;
+}
+
+void CandlestickQueue::set_mid_window_size(int mid_window_size)
+{
+    this->mid_window_size = mid_window_size;
+}
+
+void CandlestickQueue::set_long_window_size(int long_window_size)
+{
+    this->long_window_size = long_window_size;
+}

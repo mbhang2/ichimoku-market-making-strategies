@@ -1,0 +1,22 @@
+
+
+
+
+
+Input: 1) the last executed price
+i	2) best ask price, best bid price - need to know the candlestick
+
+
+Methodology:
+
+1) Ichimoku ( short number, medium length, long length): (9,26,52), (6,17,34), (5,13,26 - the best for now)
+
+	get 13 candlesticks (last unique executed price) - disregard the same trading price
+	
+	calculate: ( highest high of shortnumber candlestick + lowest low of short number candlestick)/2
+	calculate: ( highest high of medium length candlestick + lowest low of medium length number candlestick)/2
+	
+	if (shorter > long):
+		buy
+	else:
+		sell	

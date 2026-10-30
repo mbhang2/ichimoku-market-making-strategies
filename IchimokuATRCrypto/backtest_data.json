@@ -1,0 +1,80 @@
+[
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "041149",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATRCrypto",
+        "start_date": "01-01-2022",
+        "end_date": "01-21-2022",
+        "pnl": {
+            "sharpe_ratio": 1.3174902795392047
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-20",
+        "unique_id": "035756",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATRCrypto",
+        "start_date": "01-01-2022",
+        "end_date": "01-21-2022",
+        "pnl": {
+            "sharpe_ratio": 1.3174902795392047
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "183124",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.9474200078066054
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "182506",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -3.046089270260515
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "180608",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -3.046089270260515
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "175230",
+        "repeat_count": 0,
+        "instance_name": "IchimokuATR",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -3.304160391754884
+        },
+        "fill": {},
+        "orders": {}
+    }
+]

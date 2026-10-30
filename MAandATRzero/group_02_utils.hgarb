@@ -1,0 +1,127 @@
+
+#include <queue>
+#include <deque>
+#include <string>
+#include <iostream>
+// #include "QuoteEventMsg.h"
+// #include "MarketModels/Quote.h"
+#include <Strategy.h>
+#include <Analytics/ScalarRollingWindow.h>
+#include <Analytics/InhomogeneousOperators.h>
+#include <Analytics/IncrementalEstimation.h>
+#include <MarketModels/Instrument.h>
+#include <Utilities/ParseConfig.h>
+// #include <MarketModels/Quote.h>
+
+class Candlestick {
+    public:
+    Candlestick(double open_price);
+    double best_ask_price; // Highest Ask price recieved
+    double best_bid_price; // Lowest Bid price recieved
+    int volume; // Volume of the candlestick
+    double open_price; // Open price of the candlestick
+    double close_price; // Close price of the candlestick
+    bool SIDE; // True if Ask, False if Bid
+    bool isaskupdated; // True if the candlestick is updated
+    bool isbidupdated; // True if the candlestick is updated
+    bool isclosed = false; // True if the candlestick is closed
+    void add_best_ask_price(double price);
+    void add_best_bid_price(double price);
+    void add_volume(int volume);
+    void add_open_price(double price);
+    void add_close_price(double price);
+    void add_quote(const Quote& quote);
+};
+
+
+class CandlestickQueue {
+private:
+    std::deque<Candlestick> candleQueue;
+    int maxSize;
+    int short_window_size;
+    int mid_window_size;
+    int long_window_size;
+    double highest_ask_price_short;
+    double lowest_bid_price_short;
+    double highest_ask_price_mid;
+    double lowest_bid_price_mid;
+    double highest_ask_price_long;
+    double lowest_bid_price_long;
+    double most_recent_close_price; 
+
+    #ifdef LOGGING
+    std::ofstream logFile;
+    #endif
+
+       
+public:
+    CandlestickQueue(int short_window_size, int mid_window_size, int long_window_size) : maxSize(long_window_size), short_window_size(short_window_size), mid_window_size(mid_window_size) 
+    {
+        assert(short_window_size < mid_window_size);
+        assert(mid_window_size < long_window_size);
+        highest_ask_price_short = 0;
+        lowest_bid_price_short = 0;
+        highest_ask_price_mid = 0;
+        lowest_bid_price_mid = 0;
+        highest_ask_price_long = 0;
+        lowest_bid_price_long = 0;
+        most_recent_close_price = 0;
+        
+
+        #ifdef LOGGING
+        
+        #ifdef INSTANCE_NAME
+        #pragma message("Instance Name: " INSTANCE_NAME)
+        std::string instanceName = INSTANCE_NAME;
+        std::cout << "Instance Name: " << instanceName << std::endl;
+        #endif
+
+        #ifdef START_DATE
+        #pragma message("Start Date: " START_DATE)
+        std::string startDate = START_DATE;
+        std::cout << "Start Date: " << startDate << std::endl;
+        #endif
+
+        #ifdef END_DATE
+        #pragma message("End Date: " END_DATE)
+        std::string endDate = "END_DATE";
+        std::cout << "End Date: " << endDate << std::endl;
+        #endif
+        std::string fileName = "CANDLESTICK_"+ instanceName + "_" + startDate + "_to_" + endDate + ".csv";
+        logFile.open(fileName);
+        if (!logFile.is_open()) {
+            // Handle the error, such as displaying a message or throwing an exception
+            std::cout << "Error opening file" << std::endl;
+        }
+        logFile << "volume,open_price,close_price,best_ask_price,best_bid_price" << std::endl;
+        #endif
+    }
+
+    // Default constructor
+    CandlestickQueue() : CandlestickQueue(5, 10, 15) {}
+
+    
+    ~CandlestickQueue() {
+        #ifdef LOGGING
+        if (logFile.is_open()) {
+            logFile.close();
+        }
+        #endif
+    }
+    
+
+    bool addCandlestick(const Candlestick& candle);
+    void manage_state_init(const Candlestick& candle);
+    void manage_state(const Candlestick& candle);
+    double getshort_avg_highest_ask_lowest_bid_price();
+    double getmid_avg_highest_ask_lowest_bid_price();
+    double getlong_avg_highest_ask_lowest_bid_price();
+    void set_short_window_size(int short_window_size);
+    void set_mid_window_size(int mid_window_size);
+    void set_long_window_size(int long_window_size);
+    int get_short_window_size(){return short_window_size;}
+    int get_mid_window_size(){return mid_window_size;}
+    int get_long_window_size(){return long_window_size;}
+    // Additional methods like getLatestCandlestick(), getSize(), isEmpty() can be added as needed
+};
+

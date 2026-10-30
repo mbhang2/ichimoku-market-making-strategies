@@ -1,0 +1,743 @@
+[
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "233451",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -1.2406688668891965
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "212759",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "02-24-2023",
+        "pnl": {
+            "sharpe_ratio": -0.609750199093383
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "212552",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": -0.9712565499996519
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "212205",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": -0.9712565499996519
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "211900",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": -0.9712565499996519
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "210813",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": 0.09583061859222633
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "210544",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": 0.09583061859222633
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "204546",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": 0.09583061859222633
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "204423",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": 0.09583061859222633
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "203448",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": 0.09583061859222633
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "201001",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": 0.9298376952952301
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "200712",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-11-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": -1.5246416701639522
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "195603",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-11-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": -1.5246416701639522
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "193903",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": 0.09583061859222633
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-19",
+        "unique_id": "191823",
+        "repeat_count": 1,
+        "instance_name": "BasicMA",
+        "start_date": "01-09-2023",
+        "end_date": "01-13-2023",
+        "pnl": {
+            "sharpe_ratio": 0.09583061859222633
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "225653",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.8513289855757233
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "225522",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.8513289855757233
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "210900",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.5299050974927845
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "210509",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.7545940047976909
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "203528",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-04-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": -0.401563007419845
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "203414",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-04-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": -0.445957357101004
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "202545",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-04-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": -0.511616124023432
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "201944",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.530671378753425
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "200956",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -4.019413175100093
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "181849",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.6541223821547657
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "180842",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.6541223821547657
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "180600",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.6559051264048783
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "175209",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.9564577453334118
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "171940",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.05946859163450527
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "170954",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.050333692493060724
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "155334",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": 0.026625490972137737
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "154245",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": 0.026625490972137737
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-18",
+        "unique_id": "153853",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.8062435453296515
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "142956",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.8062435453296515
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "142357",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.8062435453296515
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "141110",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.8236809695193835
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "140626",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.8236809695193835
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "135914",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -4.830829318793293
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "123516",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.7247993232973531
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "112352",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.7526391772058083
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "090434",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.7247993232973531
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "085256",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-09-2023",
+        "pnl": {
+            "sharpe_ratio": -0.9999863860101101
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "083233",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-03-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": -0.7378020655174836
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "081611",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-04-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": 1.7285680343792171
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-17",
+        "unique_id": "080216",
+        "repeat_count": 0,
+        "instance_name": "BasicMA",
+        "start_date": "01-04-2023",
+        "end_date": "01-04-2023",
+        "pnl": {
+            "sharpe_ratio": -0.275440465183103
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "115109",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.7197578673881304
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "114227",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.7197578673881304
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "113921",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.6023128506552239
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "113643",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.7687455069559503
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "113410",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.7687455069559503
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "111508",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.27693323629167
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "110940",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.27693323629167
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "110802",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.27693323629167
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "102251",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.27693323629167
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-16",
+        "unique_id": "100102",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -0.27693323629167
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-15",
+        "unique_id": "124138",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.000354359042188
+        },
+        "fill": {},
+        "orders": {}
+    },
+    {
+        "backtest_date": "2023-12-14",
+        "unique_id": "224733",
+        "repeat_count": 0,
+        "instance_name": "BasicIchimoku",
+        "start_date": "01-03-2023",
+        "end_date": "01-03-2023",
+        "pnl": {
+            "sharpe_ratio": -1.3464079266333997
+        },
+        "fill": {},
+        "orders": {}
+    }
+]
